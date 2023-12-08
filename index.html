@@ -10,6 +10,10 @@
     <meta name="keywords" content="construction, building, contractor, construction services">
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS -->
@@ -22,7 +26,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg position-absolute top-0 w-100">
             <div class="container">
-                <a class="navbar-brand" href="index.html">AES GROUP</a>
+                <a class="navbar-brand text-orange" href="index.html">AES GROUP</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +38,10 @@
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pe-3" href="#">About</a>
+                            <a class="nav-link pe-3" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pe-3" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pe-3" href="#">Projects</a>
+                            <a class="nav-link pe-3" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link pe-3" href="#">Contact</a>
@@ -52,27 +53,106 @@
 
 
         <!-- video -->
-        <video src="images/videos/banner.mp4" class="w-100" autoplay loop muted></video>
+        <video src="images/videos/construction_site.mp4" class="w-100" autoplay loop muted></video>
         <!-- image -->
         <!-- <img src="images/banner.jpg" class="img-fluid" alt=""> -->
         <div class="position-absolute top-50 start-50 text-center translate-middle text-white">
-            <h1 class="text-uppercase display-1 fw-bolder">Architecture <span class="fs-1"> &amp </span>Engineering
-                Services</h1>
+            <h1 class="text-uppercase display-1 fw-bolder">Architecture <span class="fs-1"> &amp </span>Engineering</h1>
         </div>
 
     </div>
     <!-- end banner -->
+    <!-- Services -->
     <main class="container my-3 my-md-5">
-        <article>
+        <article id="services" class="mt-5">
             <h1 class="text-center display-1 my-3 my-lg-5 fw-medium">Build the Dream</h1>
+            <p class="text-center mx-auto mt-4 pb-2 w-75">Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Adipisci maiores inventore sapiente veritatis a
+                totam cupiditate quaerat esse repellendus nobis?</p>
+            <div class="row my-5">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/bulding.jpg" class="card-img-top h-100" alt="...">
+                        <div class="card-body front">
+                            <h3 class="card-title"><i class="fa-regular fa-building me-3 text-orange"></i>Building</h3>
+                            <p class="card-text">Design &amp Supervision
+                            </p>
+                        </div>
+                        <div class="card-body back">
+                            <p class="card-text">Architecture
+                            </p>
+                            <p class="card-text">Engineering
+                            </p>
+                            <p class="card-text">MEP (Mechanical, Electrical, Plumbing)
+                            </p>
+                            <p class="card-text">Energy Efficiency
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/infrastructure.jpg" class="card-img-top h-100" alt="...">
+                        <div class="card-body front">
+                            <h3 class="card-title"><i
+                                    class="fa-solid fa-road-bridge text-orange me-3"></i>Infrastructure</h3>
+                            <p class="card-text">Design &amp Supervision
+                            </p>
+                        </div>
+                        <div class="card-body back">
+                            <p class="card-text">Highway
+                            </p>
+                            <p class="card-text">Urban &amp Rural Rode
+                            </p>
+                            <p class="card-text">Bridges
+                            </p>
+                            <p class="card-text">Railway
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card">
+                        <img src="images/energy.jpg" class="card-img-top h-100" alt="...">
+                        <div class="card-body front">
+                            <h3 class="card-title"><i class="fa-solid fa-solar-panel text-orange me-3"></i>Renewable
+                                Energy</h3>
+                            <!-- <p class="card-text">Design &amp Supervision
+                            </p> -->
+                        </div>
+                        <div class="card-body back">
+                            <p class="card-text">Solar
+                            </p>
+                            <p class="card-text">Wind
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="about" class="my-5 pt-5">
+            <div class="row my-5 pt-5">
+                <div class="col-12 col-md-6">
+                    <h1 class="text-orange display-2 fw-bold">About</h1>
+                    <p>“AES GROUP shpk” is an Albanian registered company specialized in Architectural &amp Engineering
+                        Design, Project Management, Supervision and Consulting service. The company has over 5 years
+                        of experience in the sector.
+                        In addition to design, AES GROUP shpk provides consulting services in preparation of tender
+                        documents, project management, construction supervision, quality control, expert appraisal, bid
+                        evaluation and post auditing</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/banner.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
         </article>
     </main>
-    <!-- Services -->
-
-
     <!-- end services -->
     <!-- footer -->
+    <div class="footer">
 
+    </div>
     <!-- end footer -->
     <!-- JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
