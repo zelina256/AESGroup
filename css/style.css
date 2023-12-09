@@ -15,10 +15,17 @@
 /* Body */
 body {
     font-size: 1em;
-    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
     word-spacing: 1px;
-    background-color: var(--background-color)
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+}
+
+html,
+body {
+    height: 100%;
 }
 
 /* Text */
@@ -28,6 +35,11 @@ body {
 
 .text-orange {
     color: var(--text-unique-color);
+}
+
+/* Backgound */
+.bg {
+    background-color: var(--text-unique-color);
 }
 
 /* Buttons */
@@ -43,6 +55,7 @@ nav .navbar-brand,
     font-size: 1.5em;
     z-index: 999;
     font-weight: bolder;
+    color: var(--text-unique-color);
 }
 
 .nav-link,
@@ -67,6 +80,12 @@ nav .nav-link:hover::after {
     color: #fefcf6;
 }
 
+.navbar-toggler {
+
+    color: var(--text-unique-color);
+    border: var(--bs-border-width) solid var(--text-unique-color);
+
+}
 
 .banner {
     aspect-ratio: 16 / 9;
@@ -89,7 +108,7 @@ nav .nav-link:hover::after {
 
 .banner h1 {
     letter-spacing: 10px;
-    font-size: 6em;
+    font-size: 5em;
 }
 
 /* Services */
@@ -97,6 +116,7 @@ nav .nav-link:hover::after {
     /* width: 24rem; */
     height: 20rem;
     border-radius: 10px;
+    cursor: pointer;
     overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -149,7 +169,168 @@ nav .nav-link:hover::after {
     transition: opacity 0.5s 0.1s ease-in;
 }
 
+/* About */
+#about div {
+    height: calc(100vh - 300px);
+}
+
+#about p {
+    font-size: 25px
+}
+
 /* Footer */
+.footer-menu {
+    padding: 45px 0;
+}
+
+.footer-menu .navbar-header {
+    padding: 0;
+}
+
+.footer-menu .navbar-header a.navbar-brand,
+.footer-menu.footer-menu .navbar-header a.navbar-brand:hover,
+.footer-menu .navbar-header a.navbar-brand:focus {
+    padding: 0;
+    height: 0;
+}
+
+.footer-menu ul.footer-menu-item {
+    text-align: right;
+}
+
+.footer-menu ul.footer-menu-item li {
+    display: inline-block;
+}
+
+.footer-menu ul.footer-menu-item li a {
+    color: var(--text-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+.footer-menu ul.footer-menu-item li a:hover {
+    color: var(--text-unique-color);
+}
+
+.hm-footer-copyright {
+    padding: 40px 0;
+    border-top: 1px solid #e1e5eb;
+}
+
+.hm-footer-copyright p,
+.hm-footer-copyright p a {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social .fa-phone:before {
+    position: relative;
+    top: 2px;
+}
+
+.footer-social a,
+.footer-social span {
+    display: inline-block;
+    color: #afb4bf;
+    font-size: 14px;
+    margin-left: 15px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #eef2f6;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.footer-social span {
+    margin-right: 15px;
+    margin-left: 0;
+    color: var(--text-color);
+}
+
+.footer-social span:hover {
+    color: var(--text-unique-color);
+}
+
+.footer-social a:hover {
+    background: var(--text-unique-color);
+    color: #fff;
+}
+
+footer .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Top Button */
+#scroll-Top .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: var(--text-unique-color);
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 2;
+}
+
+#scroll-Top .return-to-top:hover {
+    background: var(--text-unique-color);
+}
+
+#scroll-Top .return-to-top i {
+    position: relative;
+    bottom: 0;
+
+}
+
+#scroll-Top .return-to-top i {
+    position: relative;
+    animation-name: example;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 7px;
+    }
+}
 
 /* Responsive */
 @media screen and (max-width:1200px) {}
@@ -160,6 +341,17 @@ nav .nav-link:hover::after {
     .banner h1 {
         display: none;
     }
+
+    nav .nav-link:hover::after {
+        width: 20%;
+        color: #fefcf6;
+    }
+
+    #about p {
+        font-size: 7px;
+        padding-top: 30px;
+    }
+
 }
 
 @media screen and (max-width:500px) {}

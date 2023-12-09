@@ -4,16 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
     <title>AES GROUP</title>
     <meta name="description"
-        content="Your construction company specializing in high-quality building projects. Contact us for reliable and professional construction services.">
+        content="Our construction company specializing in high-quality building projects. Contact us for reliable and professional construction services.">
     <meta name="keywords" content="construction, building, contractor, construction services">
     <!-- Fav Icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS -->
@@ -63,8 +74,8 @@
     </div>
     <!-- end banner -->
     <!-- Services -->
-    <main class="container my-3 my-md-5">
-        <article id="services" class="mt-5">
+    <main class="my-3 my-md-5">
+        <article id="services" class="mt-5 container ">
             <h1 class="text-center display-1 my-3 my-lg-5 fw-medium">Build the Dream</h1>
             <p class="text-center mx-auto mt-4 pb-2 w-75">Lorem, ipsum dolor sit amet consectetur adipisicing
                 elit. Adipisci maiores inventore sapiente veritatis a
@@ -131,31 +142,107 @@
             </div>
         </article>
 
-        <article id="about" class="my-5 pt-5">
-            <div class="row my-5 pt-5">
-                <div class="col-12 col-md-6">
-                    <h1 class="text-orange display-2 fw-bold">About</h1>
-                    <p>“AES GROUP shpk” is an Albanian registered company specialized in Architectural &amp Engineering
-                        Design, Project Management, Supervision and Consulting service. The company has over 5 years
-                        of experience in the sector.
-                        In addition to design, AES GROUP shpk provides consulting services in preparation of tender
-                        documents, project management, construction supervision, quality control, expert appraisal, bid
-                        evaluation and post auditing</p>
+        <article id="about" class="my-3 my-md-5 pt-md-5 container-fluid bg ">
+            <div class="text-white container d-flex justify-content-center align-items-center">
+                <div class="w-75 pt-md-5">
+                    <p class="">"AES GROUP shpk" is an Albanian registered company specialized in Architectural &amp
+                        Engineering Design, Project Management, Supervision and Consulting service. The company has over
+                        5 years of experience in the sector. In addition to design, AES GROUP shpk provides consulting
+                        services in preparation of tender documents, project management, construction supervision,
+                        quality control, expert appraisal, bid evaluation and post auditing</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="images/banner.jpg" class="img-fluid" alt="">
+            </div>
+
+        </article>
+        <article class="container">
+            <div class="row my-3 my-md-5 pt-md-5">
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-orange display-3">Mission</h1>
+                            <p>"AES GROUP" aims to become a successful company in Albania and in the Region
+                                in the field of design
+                                study and supervision as well as in project management.
+                                Quality, seriousness and professionalism in offering services are at the
+                                center of our attention. The
+                                mission of “AES GROUP” is to create an added value in long term for the
+                                Client and its investments,
+                                providing high quality services in all areas of design including, transport,
+                                infrastructure and civil
+                                construction.</p>
+                        </div>
+                        <div class="col-12">
+                            <img src="images/banner.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="images/energy.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12">
+                            <h1 class="text-orange display-3">Vision</h1>
+                            <p>Our vision is that by institutionalizing the culture of quality to bring in
+                                the market a product which is unique
+                                in its kind. By doing our job with seriousness, correctly and by respecting
+                                high standards of service allows
+                                us to create sincere, professional and long term relationships with our
+                                clients and partners.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
     </main>
     <!-- end services -->
     <!-- footer -->
-    <div class="footer">
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div>
+                            <a class="navbar-brand text-orange" href="index.html">AES GROUP</a>
+                        </div><!--/.navbar-header-->
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <ul class="footer-menu-item">
+                            <li class="scroll"><a href="#services">Services</a></li>
+                            <li class="scroll"><a href="#about">About</a></li>
+                        </ul><!--/.nav -->
+                    </div>
+                </div>
+            </div>
+            <div class="hm-footer-copyright">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-social">
+                            <span><i class="fa-solid fa-phone me-3 text-orange"></i> 069 613 0296</span>
+                            <span><i class="fa-solid fa-envelope me-3 text-orange"></i> info@aesgroup.al</span>
+                            <span><i class="fa-solid fa-location-dot me-3 text-orange"></i>Str. “Rreshit Collaku”,
+                                Building No 7/142, Shk 1, Floor2, apart 5 Tirana-Albania</span>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
+            </div><!--/.hm-footer-copyright-->
+        </div><!--/.container-->
+
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                TOP
+            </div>
+
+        </div><!--/.scroll-Top-->
+
+    </footer>
     <!-- end footer -->
     <!-- JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jQuery.js"></script>
     <!-- JS  -->
     <script src="js/index.js"></script>
 </body>
