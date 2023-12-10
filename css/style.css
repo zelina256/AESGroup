@@ -354,8 +354,12 @@ footer .navbar-brand {
     }
 
     nav .nav-link:hover::after {
-        width: 20%;
-        color: #fefcf6;
+        width: 0;
+
+    }
+
+    nav .nav-link:hover {
+        color: var(--text-unique-color);
     }
 
     #about p {
@@ -392,7 +396,7 @@ footer .navbar-brand {
 
     .nav-link,
     .nav-link:hover {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .footer-contact span {
@@ -410,17 +414,21 @@ footer .navbar-brand {
     .nav-link:hover {
         font-size: 0.8em;
     }
-
-    nav .nav-link:hover::after {
-        width: 15%;
-        color: #fefcf6;
-    }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:340px) {
 
     .nav-link,
     .nav-link:hover {
         display: inline;
+    }
+
+    .about-text {
+        padding: 0 2%;
+    }
+
+    #about p {
+        font-size: 0.9em;
+        padding-top: 10px;
     }
 }
